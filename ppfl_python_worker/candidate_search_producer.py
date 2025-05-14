@@ -94,9 +94,8 @@ def main():
     experiment_id = os.environ.get("EXPERIMENT_ID")
 
     if not organization_id or not experiment_id:
-        raise ValueError(
-            "Missing ORGANIZATION_ID or EXPERIMENT_ID in environment variables."
-        )
+        msg = "Missing ORGANIZATION_ID or EXPERIMENT_ID in environment variables."
+        raise ValueError(msg)
 
     token = get_keycloak_token()
     status_response = get_candidate_search_status(organization_id, experiment_id, token)
