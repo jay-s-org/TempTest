@@ -25,8 +25,9 @@ jobs:
           .github/scripts/rename.sh -r "${{ github.repository }}"
               
       - uses: stefanzweifel/git-auto-commit-action@v4
+        env:
+          GITHUB_TOKEN: ${{ secrets.Workflow_PAT }}
         with:
-          github_token: ${{ secrets.Workflow_PAT }}
           commit_message: "✅ Ready to clone and code."
           # commit_options: '--amend --no-edit'
           push_options: --force
