@@ -1,4 +1,4 @@
-site_name: <<{readable_name}>>
+site_name: TempTest
 theme:
   name: material
   palette:

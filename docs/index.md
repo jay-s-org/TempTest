@@ -1,4 +1,4 @@
-# Welcome to <<{readable_name}>>
+# Welcome to TempTest
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
